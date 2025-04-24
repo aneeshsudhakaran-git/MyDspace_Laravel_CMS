@@ -1,4 +1,4 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://mydspace.naturethrive.in/demo/logo.png" width="400" alt="MyDspace Logo"></a></p>
+<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://mydspace.naturethrive.in/demo/logo.png" width="100" alt="MyDspace Logo"></a></p>
 
 
 ## About MyDspace
@@ -8,7 +8,6 @@
 
 - ✨ Create dynamic one-page or multi-page websites with ease — fully customizable menus, modular sections, and clean responsive design.
 - 🔧 Ideal for personal websites, portfolios, small businesses, or quick landing pages.
-- 🔗 Live Demo: https://mydspace.naturethrive.in/
 - Would love your feedback! 💬.
 
 
@@ -27,9 +26,36 @@
 
 ## 🔗 Live Demo:
 
-👉 https://mydspace.naturethrive.in/
+👉 Client Side -  https://mydspace.naturethrive.in/
+
+👉 Admin Side -  https://mydspace.naturethrive.in/
+   [ admin@mydspace.in / mydspace2025 ]
 
 
+## How to Use
+
+Checkout Repository
+
+Run npm commands
+
+-For DB and seed demo contnets
+php artisan migrate:fresh --seed
+
+- For storage command
+php artisan storage:link
+
+- Clear commands
+php artisan cache:clear
+php artisan config:clear
+php artisan route:clear
+php artisan view:clear
+php artisan optimize:clear
+
+- For build
+npm run build
+
+- Run Server
+php artisan serve
 
 ### 💡 Why Use MyDspace?
 

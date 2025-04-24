@@ -28,8 +28,8 @@
 
 👉 Client Side -  https://mydspace.naturethrive.in/
 
-👉 Admin Side -  https://mydspace.naturethrive.in/
-   [ admin@mydspace.in / mydspace2025 ]
+👉 Admin Side -  https://mydspace.naturethrive.in/admin
+   Credentials -  admin@mydspace.in / mydspace2025
 
 
 ## How to Use

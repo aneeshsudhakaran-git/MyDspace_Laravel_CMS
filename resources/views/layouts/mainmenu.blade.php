@@ -3,7 +3,7 @@
         @forelse ($menulist as $menu)
             @php
                 if ($menu->link_type == 'S') {
-                    $linkurl = route('home') . '#' . $menu->name;
+                    $linkurl = url('/') . '#' . $menu->name;
                     $link_target = '_self';
                 } elseif ($menu->link_type == 'N') {
                     $linkurl = route('page.showpage', ['page_id' => $menu->name]);
@@ -12,7 +12,7 @@
                     $linkurl = route('page.showpage', ['page_id' => $menu->name]);
                     $link_target = '_blank';
                 } else {
-                    $linkurl = route('home');
+                    $linkurl = url('/');
                      $link_target = '_self';
                 }
             @endphp

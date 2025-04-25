@@ -156,7 +156,7 @@ class ContentSeeder extends Seeder
                 'download_file' => null,
                 'displayorder' => 2,
                 'featured' => '0',
-                'classname' => 5,
+                'classname' => '0',
                 'content_section' => 1,
                 'status' => 'P',
                 'created_at' => now(),

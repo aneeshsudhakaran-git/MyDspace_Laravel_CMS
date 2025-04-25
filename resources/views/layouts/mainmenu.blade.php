@@ -34,7 +34,7 @@
                             @foreach ($menu->children as $children)
                                 @php
                                     if ($children->link_type == 'S') {
-                                        $c_linkurl = route('home') . '#' . $children->name;
+                                        $c_linkurl = url('/') . '#' . $children->name;
                                         $c_link_target = '_self';
                                     } elseif ($children->link_type == 'N') {
                                         $c_linkurl = route('page.showpage', ['page_id' => $children->name]);
@@ -43,7 +43,7 @@
                                         $c_linkurl = route('page.showpage', ['page_id' => $children->name]);
                                         $c_link_target = '_blank';
                                     } else {
-                                        $c_linkurl = route('home');
+                                        $c_linkurl = url('/');
                                         $c_link_target = '_self';
                                     }
                                 @endphp
@@ -70,7 +70,7 @@
     @if($menu->classname && isset($Site_Menu_Style_Name[$menu->classname])  && $Site_Menu_Style_Name[$menu->classname] != 'dropdown')
         @php
             if ($menu->link_type == 'S') {
-                $linkurl = route('home') . '#' . $menu->name;
+                $linkurl = url('/') . '#' . $menu->name;
                 $link_target = '_self';
             } elseif ($menu->link_type == 'N') {
                 $linkurl = route('page.showpage', ['page_id' => $menu->name]);
@@ -79,7 +79,7 @@
                 $linkurl = route('page.showpage', ['page_id' => $menu->name]);
                 $link_target = '_blank';
             } else {
-                $linkurl = route('home');
+                $linkurl = url('/');
                     $link_target = '_self';
             }
         @endphp

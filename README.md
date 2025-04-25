@@ -34,28 +34,32 @@
 
 ## How to Use
 
-Checkout Repository
+- **Download or clone the CMS**
+- **Navigate to the app root folder and run composer install**
+- **create .env, and update required database and administrator informations.**
+- **Run php artisan migrate:fresh --seed -For DB and seed demo contents**
+- **Run php artisan storage:link - For storage command**
+- **Run  npm commands for start server**
 
-Run npm commands
+You're finished.
 
--For DB and seed demo contnets
-php artisan migrate:fresh --seed
+✨ Clear commands
 
-- For storage command
-php artisan storage:link
+-php artisan cache:clear
 
-- Clear commands
-php artisan cache:clear
-php artisan config:clear
-php artisan route:clear
-php artisan view:clear
-php artisan optimize:clear
+-php artisan config:clear
 
-- For build
-npm run build
+-php artisan route:clear
 
-- Run Server
-php artisan serve
+-php artisan view:clear
+
+-php artisan optimize:clear
+
+-For build
+ npm run build
+ 
+-Run Server
+ php artisan serve
 
 ### 💡 Why Use MyDspace?
 

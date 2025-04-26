@@ -87,6 +87,20 @@ Developers, designers, or enthusiasts – your feedback is golden!
 DM me or check out the [GitHub Repo] (if public)!
 
 
+## 📸 Screenshots
+
+<p align="left">
+  [Click here to view the full user guide (PDF)]
+  -(https://github.com/aneeshsudhakaran-git/MyDspace_Laravel_CMS/blob/master/docs/FE.pdf)
+</p>
+
+<p align="left">
+  [Click here to view the full user guide (PDF)]
+  -(https://github.com/aneeshsudhakaran-git/MyDspace_Laravel_CMS/blob/master/docs/BE.pdf)
+</p>
+
+
+
 ## License
 
 The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).

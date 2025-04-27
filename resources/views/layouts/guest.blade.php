@@ -26,7 +26,6 @@
         @endforeach
 
         <!-- OG Meta Tags to improve the way the post looks when you share the page on Facebook, Twitter, LinkedIn -->
-        <meta property="og:site" content="https://www.naturethrive.in" /> <!-- website link -->
         <meta property="og:title" content="@yield('og_title', '')"/> <!-- title shown in the actual shared post -->
         <meta property="og:description" content="@yield('og_description', '')" /> <!-- description shown in the actual shared post -->
         <meta property="og:image" content="@yield('og_image', '')" /> <!-- image link, make sure it's jpg -->

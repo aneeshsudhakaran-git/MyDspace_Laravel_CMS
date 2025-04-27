@@ -26,26 +26,34 @@ class AppServiceProvider extends ServiceProvider
     {
         Paginator::useBootstrapFive();
 
+        Schema::defaultStringLength(191);
+
         if (Schema::hasTable('site_configurations')) {
-            
-            // Aded new component for admin
-            Blade::component('guestadmin-layout', \App\View\Components\GuestAdminLayout::class);
-            Blade::component('appadmin-layout', \App\View\Components\AppAdminLayout::class);
+            // Try-catch to be extra safe
+            try {
 
-            $Site_Name = loadSiteConfiguration('Site_Name');
-            view::share('Site_Name', $Site_Name);
+                // Aded new component for admin
+                Blade::component('guestadmin-layout', \App\View\Components\GuestAdminLayout::class);
+                Blade::component('appadmin-layout', \App\View\Components\AppAdminLayout::class);
 
-            $site_config = getSiteConfiguration();
-            view::share('site_config', $site_config);
+                $Site_Name = loadSiteConfiguration('Site_Name');
+                view::share('Site_Name', $Site_Name);
 
-            $menulist = loadSiteMainMenus();
-            view::share('menulist', $menulist);
+                $site_config = getSiteConfiguration();
+                view::share('site_config', $site_config);
 
-            $Site_Menu_Style_Name = loadMainMenuStyleName();
-            view::share('Site_Menu_Style_Name', $Site_Menu_Style_Name);
+                $menulist = loadSiteMainMenus();
+                view::share('menulist', $menulist);
 
-            $Site_Content_Style_Name = loadContentStyleName();
-            view::share('Site_Content_Style_Name', $Site_Content_Style_Name);
+                $Site_Menu_Style_Name = loadMainMenuStyleName();
+                view::share('Site_Menu_Style_Name', $Site_Menu_Style_Name);
+
+                $Site_Content_Style_Name = loadContentStyleName();
+                view::share('Site_Content_Style_Name', $Site_Content_Style_Name);
+            } catch (\Exception $e) {
+                // Optional: Log error if needed
+                // \Log::error('Failed loading site_configurations: ' . $e->getMessage());
+            }
         }
     }
 }

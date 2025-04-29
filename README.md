@@ -35,8 +35,9 @@
 ## How to Use
 
 - **Download or clone the CMS**
-- **Navigate to the app root folder and run composer install**
+- **Navigate to the app root folder**
 - **create .env, and update required database and administrator informations.**
+- **and run composer install**
 - **Run php artisan migrate:fresh --seed -For DB and seed demo contents**
 - **Run php artisan storage:link - For storage command**
 - **Run  npm commands for start server**
